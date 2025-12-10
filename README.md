@@ -116,7 +116,7 @@ button {
 </div>
 
 <button id="spinBtn">SPIN</button>
-<button id="tryAgainBtn">TRY AGAIN</button>
+<button id="tryAgainBtn">2nd Turn</button>
 <button id="acceptBtn">ACCEPT</button>
 <button id="resetBtn">RESET</button>
 
