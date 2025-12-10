@@ -75,7 +75,7 @@ button {
   cursor: pointer;
 }
 
-#tryAgainBtn, #resetBtn, #acceptBtn {
+#tryAgainBtn, #resetBtn,{
   display: none;
 }
 
@@ -117,7 +117,6 @@ button {
 
 <button id="spinBtn">SPIN</button>
 <button id="tryAgainBtn">TRY AGAIN</button>
-<button id="acceptBtn">ACCEPT</button>
 <button id="resetBtn">RESET</button>
 
 <div class="prize-popup" id="prizePopup">
@@ -242,7 +241,6 @@ function spin(){
       if(spinCount === 0){
         firstPrize = selectedPrize;
         tryAgainBtn.style.display = "block";
-        acceptBtn.style.display = "block";
         spinBtn.style.display = "none";
       } else {
         resetBtn.style.display = "block";
@@ -269,7 +267,6 @@ function showPrize(prize){
 tryAgainBtn.addEventListener("click", () => {
   popup.style.display = "none";
   tryAgainBtn.style.display = "none";
-  acceptBtn.style.display = "none";
 
   const index = prizes.findIndex(p => p.name === firstPrize.name);
   if(index >= 0) prizes.splice(index, 1);
@@ -284,7 +281,6 @@ tryAgainBtn.addEventListener("click", () => {
 acceptBtn.addEventListener("click", () => {
   popup.style.display = "block";
   tryAgainBtn.style.display = "none";
-  acceptBtn.style.display = "none";
   resetBtn.style.display = "block";
   spinBtn.style.display = "none";
 });
@@ -295,7 +291,6 @@ resetBtn.addEventListener("click", () => {
   firstPrize = null;
   popup.style.display = "none";
   tryAgainBtn.style.display = "none";
-  acceptBtn.style.display = "none";
   resetBtn.style.display = "none";
   currentRotation = 0;
   canvas.style.transform = "rotate(0rad)";
