@@ -75,7 +75,7 @@ button {
   cursor: pointer;
 }
 
-#tryAgainBtn, #resetBtn,{
+#tryAgainBtn, #resetBtn, #acceptBtn {
   display: none;
 }
 
@@ -117,6 +117,7 @@ button {
 
 <button id="spinBtn">SPIN</button>
 <button id="tryAgainBtn">TRY AGAIN</button>
+<button id="acceptBtn">ACCEPT</button>
 <button id="resetBtn">RESET</button>
 
 <div class="prize-popup" id="prizePopup">
@@ -128,10 +129,10 @@ button {
 <script>
 /* ---------- Original Prize List ---------- */
 const ORIGINAL_PRIZES = [
-  { name:"Prize A", description:"Bunning Voucher - I hear a lawn mower is needed", image:"https://via.placeholder.com/300?text=A" },
+  { name:"Prize A", description:"Bunnings Voucher - I hear a lawn mower is needed", image:"https://via.placeholder.com/300?text=A" },
   { name:"Prize B", description:"Knights Pack - What every nights fan needs", image:"https://via.placeholder.com/300?text=B" },
-  { name:"Prize C", description:"Bag of Carrots - Been a nighty boy this year", image:"https://via.placeholder.com/300?text=C" },
-  { name:"Prize D", description:"Lego Voucher - Too many sets to chose from and Piastri car is sold out, so i'll leave it to you", image:"https://via.placeholder.com/300?text=D" },
+  { name:"Prize C", description:"Bag of Carrots - Been a naughty boy this year", image:"https://via.placeholder.com/300?text=C" },
+  { name:"Prize D", description:"Lego Voucher - Too many sets to chose from (Piastri car is sold out), so i'll leave it to you", image:"https://via.placeholder.com/300?text=D" },
   { name:"Prize E", description:"New Pegs - You didnt quite make the nice list", image:"https://via.placeholder.com/300?text=E" },
   { name:"Prize F", description:"Car Sponge - Well thats a dud spin", image:"https://via.placeholder.com/300?text=F" }
 ];
@@ -241,6 +242,7 @@ function spin(){
       if(spinCount === 0){
         firstPrize = selectedPrize;
         tryAgainBtn.style.display = "block";
+        acceptBtn.style.display = "none";
         spinBtn.style.display = "none";
       } else {
         resetBtn.style.display = "block";
@@ -267,6 +269,7 @@ function showPrize(prize){
 tryAgainBtn.addEventListener("click", () => {
   popup.style.display = "none";
   tryAgainBtn.style.display = "none";
+  acceptBtn.style.display = "none";
 
   const index = prizes.findIndex(p => p.name === firstPrize.name);
   if(index >= 0) prizes.splice(index, 1);
@@ -281,6 +284,7 @@ tryAgainBtn.addEventListener("click", () => {
 acceptBtn.addEventListener("click", () => {
   popup.style.display = "block";
   tryAgainBtn.style.display = "none";
+  acceptBtn.style.display = "none";
   resetBtn.style.display = "block";
   spinBtn.style.display = "none";
 });
@@ -291,6 +295,7 @@ resetBtn.addEventListener("click", () => {
   firstPrize = null;
   popup.style.display = "none";
   tryAgainBtn.style.display = "none";
+  acceptBtn.style.display = "none";
   resetBtn.style.display = "none";
   currentRotation = 0;
   canvas.style.transform = "rotate(0rad)";
