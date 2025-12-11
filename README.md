@@ -129,12 +129,12 @@ button {
 <script>
 /* ---------- Original Prize List ---------- */
 const ORIGINAL_PRIZES = [
-  { name:"Prize A", description:"Bunnings Voucher - I hear a lawn mower is needed", image:"https://via.placeholder.com/300?text=A" },
-  { name:"Prize B", description:"Knights Pack - What every nights fan needs", image:"https://via.placeholder.com/300?text=B" },
-  { name:"Prize C", description:"Bag of Carrots - Been a naughty boy this year", image:"https://via.placeholder.com/300?text=C" },
-  { name:"Prize D", description:"Lego Voucher - Too many sets to chose from (Piastri car is sold out), so i'll leave it to you", image:"https://via.placeholder.com/300?text=D" },
-  { name:"Prize E", description:"New Pegs - You didnt quite make the nice list", image:"https://via.placeholder.com/300?text=E" },
-  { name:"Prize F", description:"Car Sponge - Well thats a dud spin", image:"https://via.placeholder.com/300?text=F" }
+  { name:"Prize A", description:"Congratulations you have made the nice list", image:"https://via.placeholder.com/300?text=A" },
+  { name:"Prize B", description:"Winner Winner", image:"https://via.placeholder.com/300?text=B" },
+  { name:"Prize C", description:"Oh No! - Been a naughty boy this year?", image:"https://via.placeholder.com/300?text=C" },
+  { name:"Prize D", description:"Congratulations you have made the nice list", image:"https://via.placeholder.com/300?text=D" },
+  { name:"Prize E", description:"Bugger - You didnt quite make the nice list", image:"https://via.placeholder.com/300?text=E" },
+  { name:"Prize F", description:"Whoops - this could be a dud spin", image:"https://via.placeholder.com/300?text=F" }
 ];
 
 let prizes = JSON.parse(JSON.stringify(ORIGINAL_PRIZES));
