@@ -116,9 +116,9 @@ button {
 </div>
 
 <button id="spinBtn">SPIN</button>
-<button id="tryAgainBtn">2nd Turn</button>
+<button id="tryAgainBtn">2nd TURN</button>
 <button id="acceptBtn">ACCEPT</button>
-<button id="resetBtn">RESET</button>
+<button id="resetBtn">GAME OVER</button>
 
 <div class="prize-popup" id="prizePopup">
   <div class="prize-name"></div>
