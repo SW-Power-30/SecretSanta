@@ -133,7 +133,7 @@ const ORIGINAL_PRIZES = [
   { name:"Prize B", description:"Winner Winner", image:"https://i.etsystatic.com/26917812/r/il/93ea63/4393521497/il_fullxfull.4393521497_d13e.jpg" },
   { name:"Prize C", description:"Oh No! - Been a naughty boy this year?", image:"https://i.etsystatic.com/23425151/r/il/dd9580/2600800801/il_1080xN.2600800801_l4rn.jpg" },
   { name:"Prize D", description:"Congratulations you have made the nice list", image:"https://i.etsystatic.com/26917812/r/il/93ea63/4393521497/il_fullxfull.4393521497_d13e.jpg" },
-  { name:"Prize E", description:"Bugger - You didnt quite make the nice list", image:"https://i.etsystatic.com/23425151/r/il/dd9580/2600800801/il_1080xN.2600800801_l4rn.jpg" },
+  { name:"Prize E", description:"Bugger - You didnt make the nice list", image:"https://i.etsystatic.com/23425151/r/il/dd9580/2600800801/il_1080xN.2600800801_l4rn.jpg" },
   { name:"Prize F", description:"Whoops - this could be a dud spin", image:"https://i.etsystatic.com/23425151/r/il/dd9580/2600800801/il_1080xN.2600800801_l4rn.jpg" }
 ];
 
